@@ -1,3 +1,3 @@
-### spartans did much without
+# Spartans did much without amenities.
 
-- THF
+### For details please wait for Ethan to build the email service... so you may contact us.
