@@ -31,6 +31,7 @@ body {
 }
 
 body {
+  background-size:contain;
   display: -ms-flexbox;
   display: -webkit-box;
   display: flex;
@@ -94,7 +95,7 @@ body {
  * Cover
  */
 .cover {
-  padding: 0 1.5rem;
+  padding-top: 16rem;
 }
 .cover .btn-lg {
   padding: .75rem 1.25rem;
