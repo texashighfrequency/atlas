@@ -1,0 +1,47 @@
+svg > path {
+	stroke: #fff ; /* Color */
+	stroke-width: 0.1; /* Thickness */
+	stroke-miterlimit: 10;
+}
+
+svg > line {
+	stroke: #40C575;
+	stroke-width: 10;
+
+	animation-duration: 1s;
+	animation-iteration: 1;
+	animation-fill-mode: forwards;
+}
+
+svg > line.bar_one {
+	stroke-dasharray: 0 5;
+	animation-name: appearOne;
+}
+svg > line.bar_two {
+	stroke-dasharray: 0 10;
+	animation-name: appearTwo;
+	animation-delay: 1s;
+}
+svg > line.bar_three {
+	stroke-dasharray: 0 20;
+	animation-name: appearThree;
+	animation-delay: 2s;
+}
+
+@keyframes appearOne {
+	0% { stroke-dasharray: 0 5; }
+	50% { stroke-dasharray: 5 5; }
+	100% { stroke-dasharray: 5 5; }
+}
+
+@keyframes appearTwo {
+	0% { stroke-dasharray: 0 10; }
+	50% { stroke-dasharray: 10 10; }
+	100% { stroke-dasharray: 10 10; }
+}
+
+@keyframes appearThree {
+	0% { stroke-dasharray: 0 20; }
+	50% { stroke-dasharray: 20 20; }
+	100% { stroke-dasharray: 20 20; }
+}
