@@ -1,4 +1,4 @@
-# SecureThisElection
+# THS
 
 To Launch Locally:
 ```
@@ -16,3 +16,5 @@ robots.txt For publication url
 config.yml For publication url and google tracker
 
 Index.html for formspree contact form api url
+
+web-manifest.json for publication-url
