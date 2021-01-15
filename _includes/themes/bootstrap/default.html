@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name='mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-capable' content='yes'>
+    <meta name='apple-mobile-web-app-status-bar-style' content='black'> <!-- black | black-translucent | default -->
+    <meta name="author" content="{{ site.company.name }}">
+    <meta property="image" content="{{ BASE_PATH }}/assets/images/social-img.png" />
+
+<!-- Used in Mobile/Social link sharing generated preview https://ogp.me/ -->
+    <title>{{ page.title }}</title>
+    <link rel='canonical' href="https://getbootstrap.com/docs/4.0/examples/cover/" />
+    {% if page.tagline %}<meta name="description" content="{{ page.tagline }}">{% endif %}
+    <link rel='manifest' href='{{ BASE_PATH }}/web-manifest.json'>
+    <meta name='theme-color' content="#eeee">
+
+    <!-- Icons -->
+    <link rel='icon' type='image/x-icon' href='{{ BASE_PATH }}/assets/images/icons/favicon.ico'>
+    <link rel='apple-touch-icon' href='{{ BASE_PATH }}/assets/images/icons/152.png'>
+    <link rel='icon' sizes='192x192' href='{{ BASE_PATH }}/assets/images/icons/192.png'>
+    <meta name='msapplication-square310x310logo' content='{{ BASE_PATH }}/assets/images/icons/310.png'>
+
+    <script>
+        // Disable scrolling.
+        document.ontouchmove = function (e) {
+            e.preventDefault();
+        }
+    </script>
+
+<!-- Bots -->
+    {% if page.keywords %}<meta name="keywords" content="{{ page.keywords }}">{% endif %}
+    {% if page.canonical %}<link rel="canonical" href="{{ page.canonical }}"/>{% endif %}
+
+<!-- Global site tag (gtag.js) - Google Analytics -->
+    {% if site.analytics.google.tracking_id %}
+        <script async src="https://www.googletagmanager.com/gtag/js?id={{ site.analytics.google.tracking_id }}"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+
+            gtag('config', '{{ site.analytics.google.tracking_id }}');
+        </script>
+    {% endif %}
+
+<!-- Google ADS mobile block-->
+    {% if site.google_ad_client %}
+        <script type="text/javascript" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+        <script type="text/javascript">
+            (adsbygoogle = window.adsbygoogle || []).push({
+                google_ad_client: "{{ site.google_ad_client }}",
+                enable_page_level_ads: true
+            });
+        </script>
+    {% endif %}
+    
+<!--Fonts CSS-->
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/FontAwsome/all.css">
+
+<!--Main CSS-->
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/main.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/Main/html.css">
+
+<!-- External CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script>window.jQuery || document.write('<script src="{{ BASE_PATH }}/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+    <script src="{{ BASE_PATH }}/assets/js/vendor/popper.min.js"></script>
+
+<!--Google Font link-->
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu:300,300i,400,400i,500,500i,700,700i" rel="stylesheet">
+
+<!--Owl Scroller-->
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/Owl_Scroll/owl.carousel.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/Owl_Scroll/owl.theme.css">
+
+<!--BootStraps-->
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/Bootstraps/bootstrap.min.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/Bootstraps/jasny-bootstrap.min.css">
+
+<!--SecureThisElection css-->
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/Main/button.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/Main/footer.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/Main/page.css">
+
+<!--Pages css-->
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/cover.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/contact.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/main.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/press_page.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/signin.css">
+
+<!--Animated Navigation-->
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/Animations/animate.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/Animations/scrolling-nav.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/Animations/progress.css">
+    <link rel="stylesheet" href="{{ BASE_PATH }}/assets/css/Animations/carousel.css">
+
+<!-- CSS loaded by the children page -->
+    {% if page.css %}<link rel="stylesheet" type="text/css" href="{{ BASE_PATH }}/assets/css/custom/{{ page.css }}" />{% endif %}
+
+    <!-- facebook link share -->
+    <meta property="og:title" content="{{ page.title }}">
+    <meta property="og:description" content="{{ page.tagline }}">
+    <meta property="og:url" content="{{ BASE_PATH }}">
+    
+  </head>
+
+  <!-- Body -->
+  <body>
+    {{ content }}
+    <br />
+    {% include themes/bootstrap/footer.html %}
+    
+    {% include JB/analytics %}
+
+    <!-- JS includes -->
+    <script src="{{ BASE_PATH }}/assets/js/jquery.min.js"></script>
+    <script src="{{ BASE_PATH }}/assets/js/jquery.nav.js"></script>
+    <script src="{{ BASE_PATH }}/assets/js/owl.carousel.min.js"></script>
+    <script src="{{ BASE_PATH }}/assets/js/form-validator.min.js"></script>	  
+    <script src="{{ BASE_PATH }}/assets/js/contact-form-script.js"></script>
+    <script src="{{ BASE_PATH }}/assets/js/jasny-bootstrap.min.js"></script>
+    <script src="{{ BASE_PATH }}/assets/js/jquery.mixitup.js"></script>	  
+    <script src="{{ BASE_PATH }}/assets/js/jquery.countTo.js"></script>
+    <script src="{{ BASE_PATH }}/assets/js/jquery.easing.min.js"></script>
+    <script src="{{ BASE_PATH }}/assets/js/main.js"></script>	
+    <script src="{{ BASE_PATH }}/assets/js/scrolling-nav.js"></script>
+    <script src="{{ BASE_PATH }}/assets/js/tether.min.js"></script>
+    <script src="{{ BASE_PATH }}/assets/js/bootstrap.min.js"></script>
+
+    <!-- ********************* Grads SCRIPTING ******************************-->
+    <!--Custom script loaded by children page-->
+    {% if page.js %}<script src="{{ BASE_PATH }}/assets/js/{{ page.js }}"></script>{% endif %}
+  </body>
+
+</html>

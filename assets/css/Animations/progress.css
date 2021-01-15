@@ -1,0 +1,43 @@
+:root {
+    --maintext: #eeee;
+    --maincolor:  #eeee;
+}
+
+.progress{
+    height:15px;
+    margin-bottom:20px;
+    overflow:hidden;
+    background-color:#ddd;
+    border-radius:0px;
+    -webkit-box-shadow:none;
+    box-shadow:none
+}
+.progress .progress-bar{
+    font-size:11px;
+    line-height:15px;
+    color:#fff;
+    background-color: var(--maintext);
+    -webkit-box-shadow:none;
+    box-shadow:none
+}
+.progress-bar-default{
+    background-color:var(--maintext)
+}
+.progress-bar-primary{
+    background-color:var(--maintext)
+}
+.progress-bar-success{
+    background-color:#87c056
+}
+.progress-bar-info{
+    background-color:#4da5e2
+}
+.progress-bar-warning{
+    background-color:#fc6
+}
+.progress-bar-danger{
+    background-color:#ec7160
+}
+.progress-label .sr-only{
+    position:relative
+}

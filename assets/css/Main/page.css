@@ -1,0 +1,217 @@
+:root {
+    --maintext: #eeee;
+    --maincolor:  #eeee;
+    --accentcolor: #5d8eb8;
+}
+
+.textTitle {
+    color: var(--maintext);
+    font-size:48px;
+    font-weight:bold;
+}
+
+.contact-form-sub-button {
+    margin: auto;
+    display: block;
+    text-align: center;
+    width: 30%;
+}
+
+.accentTxt {
+    color: white;
+    margin: auto;
+    display: block;
+    text-align: center;
+    padding-bottom: 8px;
+}
+
+.hero-content-v2 {
+    margin-top:144px;
+    text-align: center;
+    margin-top:0;
+}
+
+.hero-content-v2 h3 {
+    font-size:24px;
+    color:#2f3542;
+    font-weight:400;
+    margin-top:0;
+    font-size:22px;
+}
+
+.hero-content-v2 h3 strong {
+    display:block;
+    font-size:48px;
+    font-weight:400;
+    line-height:62px;
+    margin-bottom:25px;
+}
+
+.hero-content-v2 h3 strong{
+    font-size:32px;
+    line-height:38px
+}
+
+.hero-content-v2 p {
+    color:#444;
+    font-size:18px;
+    margin-bottom:45px
+}
+
+.service-box {
+    margin-top:15px;
+    margin-bottom:15px
+}
+
+.service-box .service-icon {
+    float: left;
+    margin-top:5px
+}
+
+.service-box .service-icon i {
+    font-size:32px;
+    color:var(--accentcolor)
+}
+
+.service-box .service-content {
+    padding-left:48px
+}
+
+.service-box .service-content h4 {
+    font-size:18px;
+    margin-bottom:10px;
+    font-weight:700;
+    transition:all 0.4s ease-in-out;
+    -moz-transition:all 0.4s ease-in-out;
+    -webkit-transition:all 0.4s ease-in-out;
+    -o-transition:all 0.4s ease-in-out
+}
+
+.service-box .service-content h4 a {
+    color:#444
+}
+
+.service-box .service-content h4 a:hover {
+    color:var(--maintext)
+}
+
+.social .fa-facebook-f:hover {
+    color:#3b5998
+}
+
+.social .fa-twitter:hover {
+    color:#55acee
+}
+
+.social .fa-instagram:hover {
+    color:#fb3958
+}
+
+.social .fa-discord:hover {
+    color: #7289DA
+}
+
+.social .fa-telegram:hover {
+    color:#0088CC
+}
+
+.social .fa-github:hover {
+    color: #6cc644
+}
+
+.social .fa-linkedin:hover {
+    color:#0077B5
+}
+
+.social-links li {
+    display:inline-block
+}
+
+.social-links li a {
+    color:#444;
+    font-size:18px;
+    padding-left:0;
+    margin:10px 20px 0 0
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* Tablets */
+@media (min-width: 640px) and (max-width: 1024px) {
+    .textTitle {
+        font-size: 32px;
+    }
+
+    .social-footer a .fa{
+        margin:0px
+    }
+
+    .service-box .service-content h4{
+        font-size:14px
+    }
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* Small devices */
+@media (max-width: 640px) {
+    .textTitle {
+        font-size: 32px;
+    }
+
+    .hero-content-v2{
+        margin-top:0;
+        margin-bottom: 30px;
+    }
+
+    .service-box .service-content h4{
+        font-size:14px
+    }
+
+    .contact-form-sub-button {
+        margin: auto;
+        display: block;
+        text-align: center;
+        width: 50%;
+    }
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* Tiny devices */
+@media (max-width: 480px){
+    .textTitle {
+        font-size:24px;
+    }
+
+    .hero-content-v2{
+        margin-top:0;
+        margin-bottom: 20px;
+    }
+
+    .hero-content-v2 h3 strong{
+        font-size:32px;
+        line-height:38px
+    }
+
+    .service-box .service-content h4{
+        font-size:14px
+    }
+
+    .home-main-feature-btn {
+        padding-bottom: 6px;
+    }
+
+    .home-counters {
+        max-height: 30%;
+    }
+
+    .home-counter-element h3 {
+        font-size:24px;
+    }
+
+    .contact-form-sub-button {
+        margin: auto;
+        display: block;
+        text-align: center;
+        width: 50%;
+    }
+    
+}

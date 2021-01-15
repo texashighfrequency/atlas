@@ -1,0 +1,22 @@
+{
+    "short_name": "THS",
+    "name": "THS:",
+    "description": "",
+    "icons": [
+      {
+        "src": "/assets/images/icons/192.png",
+        "type": "image/png",
+        "sizes": "192x192"
+      },
+      {
+        "src": "/assets/images/icons/512.png",
+        "type": "image/png",
+        "sizes": "512x512"
+      }
+    ],
+    "start_url": "http://texashighfrequency.com",
+    "background_color": "#444",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#eeee"
+}

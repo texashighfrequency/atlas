@@ -1,0 +1,21 @@
+:root {
+    --maintext: #1285f6;
+    --maincolor:  #1285f6;
+}
+
+.press-block {
+    box-shadow:0px 1px 4px #ddd;
+    color:#222;
+    padding:10px 0;
+    font-size:20px;
+    margin-bottom:10px;
+}
+.press-post{
+    padding:30px
+}
+.press-post h3 a{
+    color:#444
+}
+.press-post h3 a:hover{
+    color:var(--maintext)
+}

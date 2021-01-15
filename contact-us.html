@@ -1,0 +1,78 @@
+---
+layout: index
+title: Texas High Frequency
+tagline: 
+css: 
+img: 
+img-mobile: social-image.png
+js: 
+keywords: investing
+
+---
+{% include JB/setup %}
+
+<!-- Content Area Start -->
+<div id="content">
+  
+  <div class="text-center">
+
+    <div class="cover-container d-flex h-100 p-3 flex-column container-fluid">
+      <header class="masthead">
+        <div class="inner">
+          <img class="masthead-brand" src="{{ BASE_PATH }}/assets//images/logos/wthf.png" alt="thf" width="10%" height="10%" style="justify-content: left;">
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link" href="/">home</a>
+            <a class="nav-link active" href="#">contact</a>
+            <a class="nav-link" href="clients">clients</a>
+          </nav>
+        </div>
+      </header>
+
+      <div class="row justify-content-center" >
+        <form id="fs-frm" name="simple-contact-form" accept-charset="utf-8" class="form col-9"
+          action="https://formspree.io/mjvaoldz" method="post">
+
+          <div class="form-group">
+            <label for="name" class="col-form-label">Name:</label>
+            <div class="col">
+              <input id="name" name="name" type="text" placeholder="First and Last" class="form-control" autofocus="">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="inputEmail" class="col-form-label">Email:</label>
+            <div class="col">
+              <input type="email" name="e-mail" id="inputEmail" class="form-control" placeholder="Email address"
+                required="">
+            </div>
+          </div>
+
+          <div class="form-group">
+            <label for="occupation" class="col-form-label">Occupation:</label>
+            <div class="col">
+              <input type="text" name="occupation" id="occupation" class="form-control" placeholder="Occupation"
+                required="">
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <label for="information" class="col-form-label">Information:</label>
+            <div class="col">
+              <input type="text" name="information" id="information" class="form-control"
+                placeholder="Please provide your reason for interest" required="">
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="col" style="margin-top: 50px;">
+              <button class="btn btn-lg btn-outline-primary btn-block" type="submit">Submit</button>
+            </div>
+          </div>
+          <input type="hidden" name="info-body" id="email-subject" value="THF Contact Form Submission">
+        </form>
+      </div>
+    </div>
+
+  </div>
+
+</div>

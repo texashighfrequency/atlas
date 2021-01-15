@@ -1,0 +1,143 @@
+.default-footer {
+    background:#000;
+    padding-bottom: 100px;
+    padding-top: 100px;
+    text-align: center;
+}
+
+.footer-logo {
+    height:100;
+    width:auto;
+    max-width: 60%;
+}
+
+footer .widget-title {
+    text-align:left;
+    margin-bottom:30px
+}
+
+footer .block-title {
+    font-size:20px;
+    margin-bottom:25px
+}
+
+footer .footer-Content {
+    background-color:#18191b;
+    padding:60px 0;
+    color:#fff
+}
+
+.footer-widget p {
+    color:#fff
+}
+
+.footer-info {
+    padding:25px 0
+}
+
+footer .social a {
+    font-size:14px;
+    margin-left:10px
+}
+
+footer {
+    background:#282828;
+    color:#7C7C7C
+}
+
+footer .small-title {
+    margin-bottom:20px;
+    font-size:22px;
+    color:#fff
+}
+
+footer ul {
+    padding:0;
+    margin:0;
+    list-style:none
+}
+
+footer ul li {
+    line-height:25px
+}
+
+footer ul li a {
+    color:#999;
+    font-size:14px
+}
+
+footer .menu {
+    color:#fff
+}
+
+footer .plain-flicker-gallery {
+    margin-right:-5px;
+    margin-left:-5px
+}
+
+footer .plain-flicker-gallery a {
+    display:inline-block;
+    width:32%;
+    font-size:0px;
+    padding:5px
+}
+
+footer .plain-flicker-gallery a img {
+    width:100%
+}
+
+footer .contact-us .form-control {
+    color:#999;
+    font-size:14px;
+    margin-bottom:15px;
+    background:#1D1D1D;
+    border-radius:0px
+}
+
+footer #copyright{
+    background:#1D1D1D
+}
+
+footer #copyright .row{
+    padding:10px 0
+}
+
+footer #copyright .copyright-text,footer #copyright .nav-inline {
+    line-height:38px;
+    margin-bottom:0
+}
+
+footer .menu {
+    padding-left:0
+}
+
+footer .menu li {
+    padding-bottom:10px
+}
+
+footer .menu li a {
+    color:#fff
+}
+
+footer .menu li a:hover {
+    color:#005B97
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* Small devices */
+@media (max-width: 640px) {
+    .footer-info .pull-right{
+        float:left !important
+    }
+    .footer-widget{
+        margin-bottom:30px
+    }
+}
+
+/* ----------------------------------------------------------------------------------------- */
+/* Tiny devices */
+@media (max-width: 480px) {
+    footer ul li a{
+        font-size:12px
+    }
+}
