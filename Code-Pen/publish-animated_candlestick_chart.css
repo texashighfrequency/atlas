@@ -1,0 +1,85 @@
+@import "compass/css3";
+
+$green: #3fbaa0;
+$light-green: rgba(63, 186, 160, 1);
+$dark-green: rgba(255, 108, 84, 1);
+$heights: (8.3, 7.2, 2.1, 5.5, 9.7, 4.2, 12.1, 8, 17.5, 4.2, 2.4, 8.5, 11.5, 16.6, 4, 6.6, 2.2, 2.8, 10.6);
+$offsets: (0, 8.3, 13.3, 14.3, 19.8, 25.5, 30.2, 34.8, 42.2, 55.5, 59.6, 63, 59.7, 71.5, 83.8, 81.3, 88, 86, 89);
+
+html {
+    background: #eae8e1;
+}
+
+.bar-graph {
+    height: 78%;
+    width: 100%;
+    box-sizing: border-box;
+    position: absolute;
+    padding: 0 3%;
+    font-size: 0.01%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    text-align: justify;
+
+    & .bar {
+        display: block;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 3%;
+        margin: 0 1.13%;
+        height: 60px;
+        overflow: hidden;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background: $light-green;
+            left: 0;
+            @include opacity(0);
+            @include transform(translate3d(0,100%,0));
+        }
+
+        &.dark:after {
+            background: $dark-green;
+            @include transform(translate3d(0,-100%,0));
+        }
+    }
+}
+
+@for $i from 1 through 19 {
+    .page-loaded .bar-graph .bar:nth-of-type(#{$i}) {
+        left: #{(($i - 1) * 1.9%) + ($i * 3%)};
+
+        &:after {
+            animation: bar-anim 0.5s ease #{$i * 0.1s};
+            animation-fill-mode: forwards;
+        }
+    }
+}
+
+@each $height in $heights {
+    $i: index($heights, $height);
+    .bar:nth-of-type(#{$i}) {
+        height: ($height) * 1%;
+    }
+}
+
+@each $offset in $offsets {
+    $i: index($offsets, $offset);
+    .bar:nth-of-type(#{$i}) {
+        bottom: ($offset) * 1%;
+    }
+}
+
+@keyframes bar-anim {
+    to {
+        @include transform(translate3d(0,0,0));
+        @include opacity(1);
+    }
+}
